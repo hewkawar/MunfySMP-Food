@@ -9,7 +9,7 @@ classes/
 *.launch
 
 # idea
-
+.github/
 .idea/
 *.iml
 *.ipr
