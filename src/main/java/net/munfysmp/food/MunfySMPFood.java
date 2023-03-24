@@ -17,5 +17,6 @@ public class MunfySMPFood implements ModInitializer {
 		MunfySMPFoodItem.registerModItem();
 		MunfySMPFoodBlocks.registerModBlocks();
 
+		LOGGER.info("MunfySMPFood Installed!");
 	}
 }
