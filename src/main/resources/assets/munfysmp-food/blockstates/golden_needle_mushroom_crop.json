@@ -1,0 +1,11 @@
+{
+  "variants": {
+    "age=0": { "model": "munfysmp-food:block/crop/golden_needle_mushroom/stage0" },
+    "age=1": { "model": "munfysmp-food:block/crop/golden_needle_mushroom/stage1" },
+    "age=2": { "model": "munfysmp-food:block/crop/golden_needle_mushroom/stage2" },
+    "age=3": { "model": "munfysmp-food:block/crop/golden_needle_mushroom/stage3" },
+    "age=4": { "model": "munfysmp-food:block/crop/golden_needle_mushroom/stage4" },
+    "age=5": { "model": "munfysmp-food:block/crop/golden_needle_mushroom/stage5" },
+    "age=6": { "model": "munfysmp-food:block/crop/golden_needle_mushroom/stage6" }
+  }
+}
