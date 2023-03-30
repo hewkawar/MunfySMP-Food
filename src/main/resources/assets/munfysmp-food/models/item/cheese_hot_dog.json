@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "munfysmp-food:item/cheese_hot_dog"
+  }
+}

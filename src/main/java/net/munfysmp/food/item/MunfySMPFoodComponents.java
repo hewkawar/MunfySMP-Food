@@ -4,7 +4,6 @@ import net.minecraft.item.FoodComponent;
 
 public class MunfySMPFoodComponents {
     //วัสดุ หม่าล่า ดิบ
-    public static final FoodComponent RAW_MUSHROOM = new FoodComponent.Builder().hunger(2).saturationModifier(0.2f).build();
     public static final FoodComponent RAW_GOLDEN_NEEDLE_MUSHROOM = new FoodComponent.Builder().hunger(3).saturationModifier(0.3f).build();
     public static final FoodComponent RAW_GOLDEN_NEEDLE_MUSHROOM_WITH_BACON = new FoodComponent.Builder().hunger(5).saturationModifier(0.5f).build();
     public static final FoodComponent RAW_CORN = new FoodComponent.Builder().hunger(2).saturationModifier(0.2f).build();
@@ -16,12 +15,10 @@ public class MunfySMPFoodComponents {
     public static final FoodComponent RAW_CHEESE_HOT_DOG = new FoodComponent.Builder().hunger(5).saturationModifier(0.5f).build();
     public static final FoodComponent RAW_CRISPY_SKIN_HOT_DOG = new FoodComponent.Builder().hunger(6).saturationModifier(0.6f).build();
     public static final FoodComponent RAW_LEAN_POCK = new FoodComponent.Builder().hunger(4).saturationModifier(0.4f).build();
-    public static final FoodComponent RAW_POCK = new FoodComponent.Builder().hunger(4).saturationModifier(0.4f).build();
     public static final FoodComponent RAW_CUCUMBER = new FoodComponent.Builder().hunger(3).saturationModifier(0.3f).build();
     public static final FoodComponent RAW_POCK_INTESTINES = new FoodComponent.Builder().hunger(4).saturationModifier(0.4f).build();
     public static final FoodComponent RAW_SQUID = new FoodComponent.Builder().hunger(3).saturationModifier(0.3f).build();
     public static final FoodComponent RAW_BANANA_SQUID = new FoodComponent.Builder().hunger(3).saturationModifier(0.3f).build();
-    public static final FoodComponent RAW_FISH = new FoodComponent.Builder().hunger(3).saturationModifier(0.3f).build();
     public static final FoodComponent RAW_SHRIMP = new FoodComponent.Builder().hunger(2).saturationModifier(0.2f).build();
     public static final FoodComponent RAW_CHICKEN_FEET = new FoodComponent.Builder().hunger(1).saturationModifier(0.1f).build();
 

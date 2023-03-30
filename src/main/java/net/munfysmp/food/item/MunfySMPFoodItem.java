@@ -2,6 +2,8 @@ package net.munfysmp.food.item;
 
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.item.AliasedBlockItem;
+import net.minecraft.item.FoodComponent;
+import net.minecraft.item.FoodComponents;
 import net.minecraft.item.Item;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
@@ -30,27 +32,24 @@ public class MunfySMPFoodItem {
     public static final Item PACK = registerItem("pack" , new Item(new FabricItemSettings().group(MunfySMPFoodGroup.MATERIAL)));
 
 
-    //ัสดุของหม่าล่า ดิบ
-    public static final Item RAW_BANANA_SQUID = registerItem("raw_banana_squid" , new Item(new FabricItemSettings().group(MunfySMPFoodGroup.FOOD).food(MunfySMPFoodComponents.RAW_BANANA_SQUID)));
-    public static final Item RAW_CARB_STICK = registerItem("raw_crab_stick" , new Item(new FabricItemSettings().group(MunfySMPFoodGroup.FOOD).food(MunfySMPFoodComponents.RAW_CARB_STICK)));
-    public static final Item RAW_CARB_STICK_WITH_BACON = registerItem("raw_crab_stick_with_bacon" , new Item(new FabricItemSettings().group(MunfySMPFoodGroup.FOOD).food(MunfySMPFoodComponents.RAW_CARB_STICK_WITH_BACON)));
-    public static final Item RAW_CHEESE_HOT_DOG = registerItem("raw_cheese_hot_dog" , new Item(new FabricItemSettings().group(MunfySMPFoodGroup.FOOD).food(MunfySMPFoodComponents.RAW_CHEESE_HOT_DOG)));
-    public static final Item RAW_CHICKEN_FEET = registerItem("raw_chicken_feet" , new Item(new FabricItemSettings().group(MunfySMPFoodGroup.FOOD).food(MunfySMPFoodComponents.RAW_CHICKEN_FEET)));
-    public static final Item RAW_CORN = registerItem("raw_corn" , new Item(new FabricItemSettings().group(MunfySMPFoodGroup.FOOD).food(MunfySMPFoodComponents.RAW_CORN)));
-    public static final Item RAW_CRISPY_SKIN_HOT_DOG = registerItem("raw_crispy_skin_hot_dog" , new Item(new FabricItemSettings().group(MunfySMPFoodGroup.FOOD).food(MunfySMPFoodComponents.RAW_CRISPY_SKIN_HOT_DOG)));
-    public static final Item RAW_CUCUMBER = registerItem("raw_cucumber" , new Item(new FabricItemSettings().group(MunfySMPFoodGroup.FOOD).food(MunfySMPFoodComponents.RAW_CUCUMBER)));
-    public static final Item RAW_FISH = registerItem("raw_fish" , new Item(new FabricItemSettings().group(MunfySMPFoodGroup.FOOD).food(MunfySMPFoodComponents.RAW_FISH)));
-    public static final Item RAW_GOLDEN_NEEDLE_MUSHROOM = registerItem("raw_golden_needle_mushroom" , new Item(new FabricItemSettings().group(MunfySMPFoodGroup.FOOD).food(MunfySMPFoodComponents.RAW_GOLDEN_NEEDLE_MUSHROOM)));
-    public static final Item RAW_GOLDEN_NEEDLE_MUSHROOM_WITH_BACON = registerItem("raw_golden_needle_mushroom_with_bacon" , new Item(new FabricItemSettings().group(MunfySMPFoodGroup.FOOD).food(MunfySMPFoodComponents.RAW_GOLDEN_NEEDLE_MUSHROOM_WITH_BACON)));
-    public static final Item RAW_LEAN_POCK = registerItem("raw_lean_pock" , new Item(new FabricItemSettings().group(MunfySMPFoodGroup.FOOD).food(MunfySMPFoodComponents.RAW_LEAN_POCK)));
-    public static final Item RAW_MEAT_BALL = registerItem("raw_meat_ball" , new Item(new FabricItemSettings().group(MunfySMPFoodGroup.FOOD).food(MunfySMPFoodComponents.RAW_MEAT_BALL)));
-    public static final Item RAW_MUSHROOM = registerItem("raw_mushroom" , new Item(new FabricItemSettings().group(MunfySMPFoodGroup.FOOD).food(MunfySMPFoodComponents.RAW_MUSHROOM)));
-    public static final Item RAW_POCK = registerItem("raw_pock" , new Item(new FabricItemSettings().group(MunfySMPFoodGroup.FOOD).food(MunfySMPFoodComponents.RAW_POCK)));
-    public static final Item RAW_POCK_BALL = registerItem("raw_pock_ball" , new Item(new FabricItemSettings().group(MunfySMPFoodGroup.FOOD).food(MunfySMPFoodComponents.RAW_POCK_BALL)));
-    public static final Item RAW_POCK_INTESTINES = registerItem("raw_pock_intestines" , new Item(new FabricItemSettings().group(MunfySMPFoodGroup.FOOD).food(MunfySMPFoodComponents.RAW_POCK_INTESTINES)));
-    public static final Item RAW_SHRIMP = registerItem("raw_shrimp" , new Item(new FabricItemSettings().group(MunfySMPFoodGroup.FOOD).food(MunfySMPFoodComponents.RAW_SHRIMP)));
-    public static final Item RAW_SQUID = registerItem("raw_squid" , new Item(new FabricItemSettings().group(MunfySMPFoodGroup.FOOD).food(MunfySMPFoodComponents.RAW_SQUID)));
-    public static final Item RAW_TOFU = registerItem("raw_tofu" , new Item(new FabricItemSettings().group(MunfySMPFoodGroup.FOOD).food(MunfySMPFoodComponents.RAW_TOFU)));
+    //วัสดุของหม่าล่า ดิบ
+    public static final Item BANANA_SQUID = registerItem("banana_squid" , new Item(new FabricItemSettings().group(MunfySMPFoodGroup.FOOD).food(MunfySMPFoodComponents.RAW_BANANA_SQUID)));
+    public static final Item CARB_STICK = registerItem("crab_stick" , new Item(new FabricItemSettings().group(MunfySMPFoodGroup.FOOD).food(MunfySMPFoodComponents.RAW_CARB_STICK)));
+    public static final Item CARB_STICK_WITH_BACON = registerItem("crab_stick_with_bacon" , new Item(new FabricItemSettings().group(MunfySMPFoodGroup.FOOD).food(MunfySMPFoodComponents.RAW_CARB_STICK_WITH_BACON)));
+    public static final Item CHEESE_HOT_DOG = registerItem("cheese_hot_dog" , new Item(new FabricItemSettings().group(MunfySMPFoodGroup.FOOD).food(MunfySMPFoodComponents.RAW_CHEESE_HOT_DOG)));
+    public static final Item CHICKEN_FEET = registerItem("chicken_feet" , new Item(new FabricItemSettings().group(MunfySMPFoodGroup.FOOD).food(MunfySMPFoodComponents.RAW_CHICKEN_FEET)));
+    public static final Item CORN = registerItem("corn" , new Item(new FabricItemSettings().group(MunfySMPFoodGroup.FOOD).food(MunfySMPFoodComponents.RAW_CORN)));
+    public static final Item CRISPY_SKIN_HOT_DOG = registerItem("crispy_skin_hot_dog" , new Item(new FabricItemSettings().group(MunfySMPFoodGroup.FOOD).food(MunfySMPFoodComponents.RAW_CRISPY_SKIN_HOT_DOG)));
+    public static final Item CUCUMBER = registerItem("cucumber" , new Item(new FabricItemSettings().group(MunfySMPFoodGroup.FOOD).food(MunfySMPFoodComponents.RAW_CUCUMBER)));
+    public static final Item GOLDEN_NEEDLE_MUSHROOM = registerItem("golden_needle_mushroom" , new Item(new FabricItemSettings().group(MunfySMPFoodGroup.FOOD).food(MunfySMPFoodComponents.RAW_GOLDEN_NEEDLE_MUSHROOM)));
+    public static final Item GOLDEN_NEEDLE_MUSHROOM_WITH_BACON = registerItem("golden_needle_mushroom_with_bacon" , new Item(new FabricItemSettings().group(MunfySMPFoodGroup.FOOD).food(MunfySMPFoodComponents.RAW_GOLDEN_NEEDLE_MUSHROOM_WITH_BACON)));
+    public static final Item LEAN_PORK = registerItem("lean_pork" , new Item(new FabricItemSettings().group(MunfySMPFoodGroup.FOOD).food(MunfySMPFoodComponents.RAW_LEAN_POCK)));
+    public static final Item MEAT_BALL = registerItem("meat_ball" , new Item(new FabricItemSettings().group(MunfySMPFoodGroup.FOOD).food(MunfySMPFoodComponents.RAW_MEAT_BALL)));
+    public static final Item PORK_BALL = registerItem("pork_ball" , new Item(new FabricItemSettings().group(MunfySMPFoodGroup.FOOD).food(MunfySMPFoodComponents.RAW_POCK_BALL)));
+    public static final Item PORK_INTESTINES = registerItem("pork_intestines" , new Item(new FabricItemSettings().group(MunfySMPFoodGroup.FOOD).food(MunfySMPFoodComponents.RAW_POCK_INTESTINES)));
+    public static final Item SHRIMP = registerItem("shrimp" , new Item(new FabricItemSettings().group(MunfySMPFoodGroup.FOOD).food(MunfySMPFoodComponents.RAW_SHRIMP)));
+    public static final Item SQUID = registerItem("squid" , new Item(new FabricItemSettings().group(MunfySMPFoodGroup.FOOD).food(MunfySMPFoodComponents.RAW_SQUID)));
+    public static final Item TOFU = registerItem("tofu" , new Item(new FabricItemSettings().group(MunfySMPFoodGroup.FOOD).food(MunfySMPFoodComponents.RAW_TOFU)));
 
 
 
@@ -157,6 +156,11 @@ public class MunfySMPFoodItem {
     public static final Item COOKED_MALA_FISH = registerItem("cooked_mala_fish" , new Item(new FabricItemSettings().group(MunfySMPFoodGroup.FOOD).food(MunfySMPFoodComponents.COOKED_MALA_FISH)));
     public static final Item COOKED_MALA_CHICKEN_FEET = registerItem("cooked_mala_chicken_feet" , new Item(new FabricItemSettings().group(MunfySMPFoodGroup.FOOD).food(MunfySMPFoodComponents.COOKED_MALA_CHICKEN_FEET)));
 
+
+
+    public static final Item BACON = registerItem("bacon" , new Item(new FabricItemSettings().group(MunfySMPFoodGroup.FOOD).food(new FoodComponent.Builder().hunger(1).saturationModifier(0.1f).build())));
+    public static final Item COOKED_BACON = registerItem("cooked_bacon" , new Item(new FabricItemSettings().group(MunfySMPFoodGroup.FOOD).food(new FoodComponent.Builder().hunger(3).saturationModifier(0.3f).build())));
+
     //Crop Seeds
     public static final Item CORN_SEEDS = registerItem("corn_seeds", new AliasedBlockItem(MunfySMPFoodBlocks.CORN_CROP,new FabricItemSettings().group(MunfySMPFoodGroup.MATERIAL)));
     public static final Item MUSHROOM_SEEDS = registerItem("mushroom_seeds", new AliasedBlockItem(MunfySMPFoodBlocks.MUSHROOM_CROP,new FabricItemSettings().group(MunfySMPFoodGroup.MATERIAL)));
@@ -164,8 +168,6 @@ public class MunfySMPFoodItem {
 
 
     //Crop Fruits
-    public static final Item GOLDEN_NEEDLE_MUSHROOM = registerItem("golden_needle_mushroom", new Item(new FabricItemSettings().group(MunfySMPFoodGroup.FOOD).food(MunfySMPFoodComponents.RAW_GOLDEN_NEEDLE_MUSHROOM)));
-    public static final Item CORN = registerItem("corn", new Item(new FabricItemSettings().group(MunfySMPFoodGroup.FOOD).food(MunfySMPFoodComponents.RAW_CORN)));
 
 
 

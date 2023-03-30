@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "munfysmp-food:item/crispy_skin_hot_dog"
+  }
+}
