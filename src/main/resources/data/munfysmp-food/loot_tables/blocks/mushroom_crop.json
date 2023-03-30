@@ -2,14 +2,22 @@
   "type": "minecraft:block",
   "pools": [
     {
-      "rolls": 1.0,
-      "bonus_rolls": 0.0,
+      "rolls": 1,
+      "bonus_rolls": 0,
       "entries": [
         {
           "type": "minecraft:alternatives",
           "children": [
             {
               "type": "minecraft:item",
+              "name": "minecraft:brown_mushroom",
+              "functions": [
+                {
+                  "function": "minecraft:set_count",
+                  "count": 9,
+                  "add": false
+                }
+              ],
               "conditions": [
                 {
                   "condition": "minecraft:block_state_property",
@@ -18,8 +26,7 @@
                     "age": "6"
                   }
                 }
-              ],
-              "name": "minecraft:brown_mushroom"
+              ]
             },
             {
               "type": "minecraft:item",
@@ -30,11 +37,12 @@
       ]
     },
     {
-      "rolls": 1.0,
-      "bonus_rolls": 0.0,
+      "rolls": 1,
+      "bonus_rolls": 0,
       "entries": [
         {
           "type": "minecraft:item",
+          "name": "munfysmp-food:mushroom_seeds",
           "functions": [
             {
               "function": "minecraft:apply_bonus",
@@ -45,8 +53,7 @@
                 "probability": 0.5714286
               }
             }
-          ],
-          "name": "munfysmp-food:mushroom_seeds"
+          ]
         }
       ],
       "conditions": [
