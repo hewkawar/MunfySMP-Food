@@ -1,2 +1,2 @@
 # MunfySMP-Food
-this mod make for MunfySMP Server
+this mod make for MunfySMP Server!
